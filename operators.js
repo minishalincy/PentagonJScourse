@@ -58,3 +58,10 @@ let num7 = 7;
 console.log(num7);
 
 
+let number1 = 10;
+console.log(number1);
+number1--
+console.log(number1);
+
+
+

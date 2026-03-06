@@ -1,42 +1,36 @@
-let calsi = prompt("enter the operation to be performed(add, sub, mul, div, mod)");
+let calsi = prompt(
+  "enter the operation to be performed(add, sub, mul, div, mod)",
+);
+var a = Number(prompt("enter the number"));
+var b = Number(prompt("enter the number"));
 
 switch (calsi) {
-  case 'add':
+  case "add":
     {
-      var a = Number(prompt("enter the number"));
-      var b = Number(prompt("enter the number"));
       confirm(a + b);
     }
     break;
 
-    case 'sub':
+  case "sub":
     {
-      var a = Number(prompt("enter the number"));
-      var b = Number(prompt("enter the number"));
       confirm(a - b);
     }
     break;
 
-    case 'mul':
+  case "mul":
     {
-      var a = Number(prompt("enter the number"));
-      var b = Number(prompt("enter the number"));
       confirm(a * b);
     }
     break;
 
-    case 'div':
+  case "div":
     {
-      var a = Number(prompt("enter the number"));
-      var b = Number(prompt("enter the number"));
       confirm(a / b);
     }
     break;
 
-    case 'mod':
+  case "mod":
     {
-      var a = Number(prompt("enter the number"));
-      var b = Number(prompt("enter the number"));
       confirm(a % b);
     }
     break;

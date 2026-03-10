@@ -10,3 +10,18 @@ let details =(name)=>{
 }
 
 details()
+
+let factorial = (n) => {
+    let fact = 1;
+
+    for (let i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+
+    return fact;
+}
+
+let num1 = Number(prompt('enter the number'));
+
+confirm(factorial(num1))
+

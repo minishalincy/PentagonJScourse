@@ -28,4 +28,17 @@ console.log(user2);
 user2.shift()
 console.log(user2);
 
+let newusers = []
+let newusers1 =  prompt('enter name')
+newusers.push(newusers1)
+console.log(newusers);
+
+
+let members = []
+for(var i = 0;i<2;i++){
+    let input = prompt('enter the member name')
+    members.push(input)
+}
+
+console.log(members);
 

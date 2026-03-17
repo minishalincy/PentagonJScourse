@@ -42,3 +42,13 @@ for(var i = 0;i<2;i++){
 
 console.log(members);
 
+
+//splice method
+//removing
+let students = ['vamshi','minisha','lincy']
+students.splice(0,1)
+console.log(students);
+
+//adding
+students.splice(1,0,"minishalincy")
+console.log(students);

@@ -29,14 +29,14 @@ user2.shift()
 console.log(user2);
 
 let newusers = []
-let newusers1 =  prompt('enter name')
+// let newusers1 =  prompt('enter name')
 newusers.push(newusers1)
 console.log(newusers);
 
 
 let members = []
 for(var i = 0;i<2;i++){
-    let input = prompt('enter the member name')
+    // let input = prompt('enter the member name')
     members.push(input)
 }
 
@@ -52,3 +52,20 @@ console.log(students);
 //adding
 students.splice(1,0,"minishalincy")
 console.log(students);
+
+
+//for of loop
+let arr = [90,35,58,56];
+for(i of arr){
+    console.log(i);
+    
+}
+
+//2D array
+let arr2D =[
+  [2,4,6],
+  ['orange','watermelon','mango'],
+  ['carrot','raddish','beetroot'],
+]
+
+console.log(arr2D[2][1]); //[row][col]

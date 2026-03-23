@@ -69,3 +69,5 @@ let arr2D =[
 ]
 
 console.log(arr2D[2][1]); //[row][col]
+
+

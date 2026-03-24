@@ -12,8 +12,25 @@ let employee={
     },
 
     technologies:['Javascript','Nodejs','Expressjs','MongoDB'],
+}
+employee.salary = 100000;
 
+delete employee.empID;
+console.log(employee)
+
+
+let car = {
+    brand : 'KIA',
+    color: 'Black',
+    speed: function(){
+        console.log('car is speeding over 100kmph');
+        
+    },
 
 }
 
-console.log(employee);
+car.speed()
+console.log(car.brand = 'BMW');
+
+delete car.brand
+console.log(car);

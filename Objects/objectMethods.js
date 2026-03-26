@@ -12,9 +12,16 @@ let animal = {
     },
 }
 
+//value
 Object.values(animal)
 console.log(animal);
+
+//keys
 Object.keys(animal)
+console.log(animal);
+
+//entries
+Object.entries(animal)
 console.log(animal);
 
 //seal

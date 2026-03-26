@@ -32,3 +32,9 @@ console.log(animal);
 Object.freeze(animal);
 delete animal.breed;
 console.log(animal);
+
+//object destructuring
+
+let {objDestruc:  catName} = animal
+console.log(catName);
+

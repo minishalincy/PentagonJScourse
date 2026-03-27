@@ -38,3 +38,21 @@ console.log(animal);
 let {objDestruc:  catName} = animal
 console.log(catName);
 
+//Math object
+let testNumber = 12.47
+console.log(Math.round(testNumber));
+
+//object referencing
+let ob1 = {
+  name : 'minisha',
+
+}
+
+let ob2 = ob1;
+
+console.log(ob1);
+console.log(ob2);
+
+
+ 
+

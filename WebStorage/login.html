@@ -9,14 +9,30 @@
 
 <body>
     <center>
-        <h1>Login Page</h1>
+        <h1>Login Page</h1> <hr>
     </center>
     <center>
-        <input type="text" placeholder="Enter username"><br>
-        <input type="password" placeholder="Enter password"> <br>
+        <input type="text" placeholder="Enter username" id="a"><br> <br> 
+        <input type="password" placeholder="Enter password" id="b"> <br> <br>
 
-        <button>Login</button>
+        <button onclick="Login()"> Login</button>
     </center>
+
+    <script>
+        function Login(){
+            let username = document.getElementById("a").value
+            let password = document.getElementById("b").value
+
+            let storedUserName = localStorage.getItem("username")
+            let storedPassword = localStorage.getItem("password")
+
+            if(storedUserName === username && storedPassword === password){
+               window.location.href = "home.html"
+            }else{
+                alert("Invalid Credentials, Try again")
+            }
+        }
+    </script>
 </body>
 
 </html>

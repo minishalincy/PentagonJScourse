@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+</head>
+<body>
+
+    <center><h1>SignUp</h1></center> <hr>
+    <center>
+        <input type="text" placeholder="enter name" id="a"><br>
+        <input type="email" placeholder="enter email" id="b"><br>
+        <input type="password" placeholder="enter the password" id="c"><br>
+
+        <button onclick="SignUp()"> SignUp</button>
+    </center>
+
+    <script>
+        function SignUp(){
+            let username = document.getElementById("a").value
+            let email = document.getElementById("b").value
+            let password = document.getElementById("c").value
+
+            localStorage.setItem("username",username)
+            localStorage.setItem("email",email)
+            localStorage.setItem("password",password)
+        }
+    </script>
+    
+</body>
+</html>

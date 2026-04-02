@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">Hey</h1>
+    <h1 class="head">hello</h1>
+
+    <button onclick="cc()">Click me!</button>
+
+    <script>
+        function cc(){
+            let a = document.querySelectorAll(".head")
+            a[1].innerText = "Good Morning"
+            a[0].style.color = "gray"
+        }
+    </script>
+</body>
+</html>

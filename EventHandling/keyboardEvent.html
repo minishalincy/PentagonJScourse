@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Input field to capture keyboard input -->
+    <input type="text" id="user">
+
+    <script>
+        // Get input element
+        let input = document.getElementById("user");
+
+        // Add keydown event listener
+        input.addEventListener("keydown", (e) => {
+
+            // Check which key is pressed
+
+            if (e.key === "m") {
+                console.log("move left");
+            }
+
+            else if (e.key === "i") {
+                console.log("move right");
+            }
+
+            else if (e.key === "n") {
+                console.log("move down");
+            }
+
+            else if (e.key === " ") {
+                // Spacebar key
+                console.log("jump");
+            }
+
+            else {
+                console.log("Invalid key press");
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

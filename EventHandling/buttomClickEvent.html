@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Button with id 'btn' -->
+    <button id="btn">Click</button>
+
+    <script>
+        // Get the button element using its ID
+        let buttomClick = document.getElementById("btn");
+
+        // Add first click event listener
+        buttomClick.addEventListener("click", () => {
+            // This runs when button is clicked
+            console.log("This is function A");
+        });
+
+        // Add second click event listener
+        buttomClick.addEventListener("click", () => {
+            // This ALSO runs on the same click
+            console.log("This is function B");
+        });
+
+    </script>
+
+</body>
+</html>

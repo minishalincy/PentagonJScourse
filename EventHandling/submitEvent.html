@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>submit Event</title>
+
+</head>
+<body>
+    <form action="" id="formData">
+        <input type="text" id="user"> <br> <br>
+        <button>Register</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("formData")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+            let input = document.getElementById("user").value
+            console.log(input);
+            
+        })
+    </script>
+</body>
+</html>

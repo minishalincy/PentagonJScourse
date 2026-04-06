@@ -15,7 +15,7 @@
     <script>
         let form = document.getElementById("formData")
         form.addEventListener("submit",(e)=>{
-            e.preventDefault()
+            e.preventDefault() //to prevent default form reload
 
             let input = document.getElementById("user").value
             console.log(input);

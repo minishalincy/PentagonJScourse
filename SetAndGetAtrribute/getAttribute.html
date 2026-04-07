@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a id="link" href="https://www.google.com">Search</a>
+        <button onclick="fetchLink()">Browse</button>
+    </div>
+
+    <script>
+        function fetchLink(){
+        let link = document.getElementById("link")
+        let a = link.getAttribute("href")
+        console.log(a);
+        }
+        
+    </script>
+</body>
+</html>

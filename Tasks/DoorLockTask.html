@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Lock</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="password" placeholder="Enter password"> <br><br>
+        <button onclick="doorLock()" style="background-color: brown; color: white;">Open</button>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        let attempts = 0;
+
+        function doorLock() {
+            let input = document.getElementById("password").value;
+            let res = document.getElementById("res");
+
+            if (input === "mini123") {
+                res.innerText = "Door Open, Welcome!";
+                res.style.color = "brown";
+            } else if (attempts >= 3) {
+                res.innerText = "System Locked! Try again later";
+                res.style.color = "orange";
+            } else {
+                res.innerText = "Wrong password";
+                res.style.color = "red";
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

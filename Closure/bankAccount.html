@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+</head>
+
+<body>
+
+    <script>
+        function bankAccount() {
+
+            let balance = 0
+
+            return {
+                deposite: function (amount) {
+                    if (amount <= 0) {
+                        alert("Invalid amount")
+                    } else {
+                        balance = balance + amount
+                        console.log(`deposited amount is: ${amount}, remaining balance is:${balance}`);
+                    }
+                },
+                withdraw: function (amount) {
+                    if (amount <= 0) {
+                        alert("Invalid amount")
+                    } else if (amount > balance) {
+                        alert("Insufficient Balance")
+                    } else {
+                        balance = balance - amount
+                        console.log(`withdrawal amount is: ${amount}, balance amount is :${balance}`);
+
+                    }
+                }
+            }
+        }
+
+        let minisha = bankAccount()
+        minisha.deposite(5999)
+        minisha.withdraw(5888)
+  
+
+    </script>
+
+</body>
+
+</html>

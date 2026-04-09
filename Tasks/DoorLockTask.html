@@ -10,9 +10,11 @@
 <body>
 
     <div>
+        <center>
         <input type="text" id="password" placeholder="Enter password"> <br><br>
         <button onclick="doorLock()" style="background-color: brown; color: white;">Open</button>
         <p id="res"></p>
+        </center>
     </div>
 
     <script>
@@ -25,12 +27,15 @@
             if (input === "mini123") {
                 res.innerText = "Door Open, Welcome!";
                 res.style.color = "brown";
+
             } else if (attempts >= 3) {
                 res.innerText = "System Locked! Try again later";
                 res.style.color = "orange";
             } else {
                 res.innerText = "Wrong password";
                 res.style.color = "red";
+
+
             }
 
 

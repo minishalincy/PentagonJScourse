@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person1 = {
+            user:"Minisha",
+            greet: function(){
+                console.log(`Welcome, ${this.user}`);
+            }
+        }
+        let person2 = {
+            user : "Lincy",
+            greet:person1.greet
+
+        }
+        person1.greet()
+        person2.greet()
+    </script>
+</body>
+</html>

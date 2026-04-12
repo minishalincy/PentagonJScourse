@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function apiLimiter(limit) {
+            let calls = 0;
+
+            return function () {
+                if (calls < limit) {
+                    calls++;
+                    console.log("API called", calls);
+                } else {
+                    console.log("Limit reached!");
+                }
+            };
+        }
+
+        const callApi = apiLimiter(3);
+
+        callApi(); // API called 1
+        callApi(); // API called 2
+        callApi(); // API called 3
+        callApi(); // Limit reached!
+    </script>
+</body>
+
+</html>

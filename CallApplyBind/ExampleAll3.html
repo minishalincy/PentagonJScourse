@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let restaurant = {
+            serveFood: function (dish, drink) {
+                console.log(`Welcome to ${this.name}. Here is your ${dish} with ${drink}`);
+            }
+        };
+
+        let customer1 = { name: "Vanshi's Marriage Party" };
+        let customer2 = { name: "Ganesh's Dinner" };
+        let customer3 = { name: "Shreya's Breakout Party" };
+
+        // call()
+        restaurant.serveFood.call(customer1, "Biryani", "Old Monk");
+
+        // apply()
+        restaurant.serveFood.apply(customer2, ["Holige", "Kool-Aid"]);
+
+        // bind()
+        let serveLater = restaurant.serveFood.bind(customer3);
+        serveLater("Curd Rice", "Milk");
+    </script>
+</body>
+
+</html>

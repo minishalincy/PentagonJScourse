@@ -17,7 +17,8 @@ btn.addEventListener("click",()=>{
             <h2> ${y.name}, ${y.sys.country} 📍</h2>
             <h3>Temperature 🌡️: ${y.main.temp}</h3>
             <h3>Weather ⛅: ${y.weather[0].description} </h3>
-            <h4>Wind 🌬️: ${y.wind.speed}</h4>`
+            <h4>Wind 🌬️: ${y.wind.speed}</h4>
+            `
         }
     })
     

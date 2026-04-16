@@ -1,0 +1,12 @@
+#btn{
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 6px;
+}
+
+#result{
+    color: orange;
+}

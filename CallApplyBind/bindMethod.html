@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //         bind()
+        // ✔ Definition:
+
+        // bind():
+
+        // Does NOT execute immediately
+        // Returns a new function
+        // this is permanently bound
+        // ✔ Syntax:
+        // let newFunc = functionName.bind(thisArg)
+        // ✔ Key Points:
+        // Returns a function
+        // Call it later
+        // Useful for callbacks & event handlers
+        let person1 = {
+            name: "Shreyank",
+            greet: function (city, state) {
+                console.log(`This is ${this.name} from ${city}, ${state}`);
+            }
+        };
+
+        let person2 = { name: "Kiran" };
+
+        let newFunction = person1.greet.bind(person2);
+
+        newFunction("Kalaburagi", "Karnataka");
+    </script>
+</body>
+
+</html>

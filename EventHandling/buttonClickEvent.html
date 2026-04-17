@@ -12,18 +12,23 @@
 
     <script>
         // Get the button element using its ID
-        let buttomClick = document.getElementById("btn");
+        let buttonClick = document.getElementById("btn");
 
         // Add first click event listener
-        buttomClick.addEventListener("click", () => {
+        buttonClick.addEventListener("click", () => {
             // This runs when button is clicked
             console.log("This is function A");
         });
 
         // Add second click event listener
-        buttomClick.addEventListener("click", () => {
+        buttonClick.addEventListener("click", () => {
             // This ALSO runs on the same click
             console.log("This is function B");
+        });
+
+         buttonClick.addEventListener("click", () => {
+            // This ALSO runs on the same click
+            console.log("This is function c");
         });
 
     </script>

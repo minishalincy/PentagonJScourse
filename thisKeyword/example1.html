@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
+      
         let person1 = {
-            user:"Minisha",
-            greet: function(){
+            user : "Lincy",
+           
+             greet: function(){
                 console.log(`Welcome, ${this.user}`);
             }
-        }
-        let person2 = {
-            user : "Lincy",
-            greet:person1.greet
 
+        }
+          let person2 = {
+            user:"Minisha",
+            greet:person1.greet
         }
         person1.greet()
         person2.greet()
